@@ -1,0 +1,2181 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/calvinwu/Desktop/Econ120BH/120bh.log
+  log type:  text
+ opened on:  21 Feb 2024, 20:48:03
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. use 120bh(1).csv
+invalid '(' 
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. use 120bh(1).csv
+invalid '(' 
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited"/Users/calvinwu/Desktop/Econ120BH/120bh(1)"
+import: unknown subcommand "delimited"/Users/calvinwu/Desktop/Econ120BH/120bh(1)""
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited"/Users/calvinwu/Desktop/Econ120BH/120bh (1)"
+import: unknown subcommand "delimited"/Users/calvinwu/Desktop/Econ120BH/120bh (1)""
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bh"
+(encoding automatically selected: ISO-8859-1)
+(35 vars, 109,257 obs)
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            35                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+year            int     %8.0g                 YEAR
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ind1950         int     %8.0g                 IND1950
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+category        str36   %36s                  Category
+is_agricultur~g byte    %8.0g                 Is_Agriculture, Forestry, and Fishing
+is_businessan~s byte    %8.0g                 Is_Business and Repair Services
+is_financeins~e byte    %8.0g                 Is_Finance, Insurance, and Real Estate:
+is_manufactur~g byte    %8.0g                 Is_Manufacturing
+is_miningandc~n byte    %8.0g                 Is_Mining and Construction
+is_nondurable~s byte    %8.0g                 Is_NonDurable Goods
+is_other        byte    %8.0g                 Is_Other
+is_publicadmi~n byte    %8.0g                 Is_Public Administration:
+is_transporta~n byte    %8.0g                 Is_Transportation
+is_wholesalea~e byte    %8.0g                 Is_Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+        year |    109,257    2020.366    1.493974       2019       2022
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+     ind1950 |    109,257    693.0959    228.3246        105        936
+-------------+---------------------------------------------------------
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+    disabwrk |    109,257    .0285657    .1665831          0          1
+    category |          0
+is_agricul~g |    109,257    .0258199    .1585983          0          1
+-------------+---------------------------------------------------------
+is_busines~s |    109,257    .4477699    .4972668          0          1
+is_finance~e |    109,257    .0700275    .2551946          0          1
+is_manufac~g |    109,257     .061543    .2403247          0          1
+is_mininga~n |    109,257    .0792352    .2701067          0          1
+is_nondura~s |    109,257     .038533      .19248          0          1
+-------------+---------------------------------------------------------
+    is_other |    109,257           0           0          0          0
+is_publica~n |    109,257     .057232    .2322865          0          1
+is_transpo~n |    109,257    .0480244    .2138188          0          1
+is_wholesa~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+-------------+---------------------------------------------------------
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+-------------+---------------------------------------------------------
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+-------------+---------------------------------------------------------
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+
+. 
+. asdoc summary_table, save (final.doc)
+command asdoc is unrecognized
+r(199);
+
+end of do-file
+
+r(199);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bh.new"
+file /Users/calvinwu/Desktop/120bh.new not found
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bh.csv"
+no; data in memory would be lost
+r(4);
+
+end of do-file
+
+r(4);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bh"
+no; data in memory would be lost
+r(4);
+
+end of do-file
+
+r(4);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. import delimited "/Users/calvinwu/Desktop/120bh"
+(encoding automatically selected: ISO-8859-1)
+(34 vars, 109,257 obs)
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            34                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+year            int     %8.0g                 YEAR
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+category        str36   %36s                  Category
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+        year |    109,257    2020.366    1.493974       2019       2022
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+-------------+---------------------------------------------------------
+     incwage |    109,257    60268.34    79038.02          0    1599999
+    disabwrk |    109,257    .0285657    .1665831          0          1
+    category |          0
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+-------------+---------------------------------------------------------
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+-------------+---------------------------------------------------------
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+-------------+---------------------------------------------------------
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+-------------+---------------------------------------------------------
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+-------------+---------------------------------------------------------
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. regress Yearly_Wage_Salary white_black white_american_indian white_asian white_hawaiian age sex nocol
+> legedegree associatedegree badegree masterdegree professionaldegree doctoratedegree  agriculturefores
+> tryandfishing  businessandrepairservices financeinsuranceandrealestate manufacturing miningandconstru
+> ction nondurablegoods disabwrk ahrsworkt
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(20, 109236)   =   1076.14
+       Model |  1.1234e+14        20  5.6171e+12   Prob > F        =    0.0000
+    Residual |  5.7018e+14   109,236  5.2197e+09   R-squared       =    0.1646
+-------------+----------------------------------   Adj R-squared   =    0.1644
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72248
+
+-----------------------------------------------------------------------------------------------
+           Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+------------------------------+----------------------------------------------------------------
+                  white_black |  -3632.868   2635.856    -1.38   0.168    -8799.107    1533.372
+        white_american_indian |  -9150.505   2470.792    -3.70   0.000    -13993.22   -4307.789
+                  white_asian |   274.6956   2985.527     0.09   0.927    -5576.894    6126.285
+               white_hawaiian |   12200.15   6627.728     1.84   0.066    -790.1065     25190.4
+                          age |   438.7819   15.87367    27.64   0.000     407.6697    469.8941
+                          sex |  -19415.62   469.8382   -41.32   0.000    -20336.49   -18494.74
+              nocollegedegree |   5837.688   665.6395     8.77   0.000     4533.045    7142.332
+              associatedegree |   10713.19   757.9266    14.13   0.000      9227.66    12198.71
+                     badegree |    32775.3   605.9542    54.09   0.000     31587.64    33962.96
+                 masterdegree |   49223.99   800.6679    61.48   0.000     47654.69    50793.29
+           professionaldegree |   106878.1   1708.251    62.57   0.000     103529.9    110226.2
+              doctoratedegree |   86291.64   1509.505    57.17   0.000     83333.03    89250.25
+agricultureforestryandfishing |  -24198.43   1426.298   -16.97   0.000    -26993.96   -21402.91
+    businessandrepairservices |  -2077.737   553.4069    -3.75   0.000    -3162.406   -993.0671
+financeinsuranceandrealestate |   20007.38   936.6479    21.36   0.000     18171.56     21843.2
+                manufacturing |   6945.369   980.1516     7.09   0.000     5024.286    8866.452
+        miningandconstruction |  -1659.665   895.1708    -1.85   0.064    -3414.187      94.857
+              nondurablegoods |   6909.643   1191.386     5.80   0.000     4574.544    9244.743
+                     disabwrk |  -7369.294   1316.437    -5.60   0.000    -9949.492   -4789.095
+                    ahrsworkt |   1057.321   17.73005    59.63   0.000      1022.57    1092.072
+                        _cons |   8130.336   1331.218     6.11   0.000     5521.168     10739.5
+-----------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+file /Users/calvinwu/Desktop/120bhfinal.csv not found
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            33                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary 
+
+. 
+. 
+. generate white_american_indian_post_covid = white_american_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. generate white = white * post_covid
+variable white already defined
+r(110);
+
+end of do-file
+
+r(110);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. regress Yearly_Wage_Salary white_black white_american_indian white_asian white_hawaiian age sex nocollegedegre
+> e associatedegree badegree masterdegree professionaldegree doctoratedegree  agricultureforestryandfishing  bus
+> inessandrepairservices financeinsuranceandrealestate manufacturing miningandconstruction nondurablegoods disab
+> wrk ahrsworkt white_american_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaiian_po
+> st_covid
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(24, 109232)   =    897.10
+       Model |  1.1238e+14        24  4.6825e+12   Prob > F        =    0.0000
+    Residual |  5.7014e+14   109,232  5.2196e+09   R-squared       =    0.1647
+-------------+----------------------------------   Adj R-squared   =    0.1645
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72247
+
+--------------------------------------------------------------------------------------------------
+              Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+---------------------------------+----------------------------------------------------------------
+                     white_black |  -5820.032   3622.953    -1.61   0.108    -12920.97    1280.903
+           white_american_indian |  -9443.629   3296.227    -2.86   0.004    -15904.19   -2983.071
+                     white_asian |  -4120.767   4243.364    -0.97   0.331     -12437.7    4196.166
+                  white_hawaiian |   26856.86   9835.145     2.73   0.006     7580.116     46133.6
+                             age |   438.5159   15.87407    27.62   0.000      407.403    469.6289
+                             sex |  -19413.91     469.84   -41.32   0.000    -20334.79   -18493.03
+                 nocollegedegree |   5834.291   665.6578     8.76   0.000     4529.612    7138.971
+                 associatedegree |   10711.51   757.9321    14.13   0.000     9225.969    12197.04
+                        badegree |   32771.62   605.9506    54.08   0.000     31583.96    33959.27
+                    masterdegree |   49228.84   800.6635    61.49   0.000     47659.55    50798.13
+              professionaldegree |   106891.9   1708.243    62.57   0.000     103543.8    110240.1
+                 doctoratedegree |   86287.99   1509.495    57.16   0.000      83329.4    89246.57
+   agricultureforestryandfishing |  -24187.94   1426.314   -16.96   0.000    -26983.49   -21392.38
+       businessandrepairservices |  -2081.297   553.4055    -3.76   0.000    -3165.964     -996.63
+   financeinsuranceandrealestate |   20007.27   936.6514    21.36   0.000     18171.45    21843.09
+                   manufacturing |   6948.516   980.1875     7.09   0.000     5027.363    8869.669
+           miningandconstruction |  -1662.865   895.1633    -1.86   0.063    -3417.372    91.64252
+                 nondurablegoods |   6912.894   1191.375     5.80   0.000     4577.816    9247.971
+                        disabwrk |  -7381.884   1316.482    -5.61   0.000     -9962.17   -4801.597
+                       ahrsworkt |   1056.905   17.73104    59.61   0.000     1022.152    1091.657
+white_american_indian_post_covid |   664.8769   4954.391     0.13   0.893    -9045.658    10375.41
+          white_black_post_covid |    4618.43   5252.886     0.88   0.379    -5677.151    14914.01
+          white_asian_post_covid |   8669.226   5950.132     1.46   0.145    -2992.948     20331.4
+       white_hawaiian_post_covid |  -26835.73   13303.65    -2.02   0.044    -52910.69   -760.7691
+                           _cons |   8158.283   1331.247     6.13   0.000     5549.059    10767.51
+--------------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            33                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+
+. 
+. rename incwage Yearly_Wage_Salary 
+
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_american_indian_post_covid = white_american_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+. 
+. regress Yearly_Wage_Salary white_black white_american_indian white_asian white_hawaiian age sex nocollegedegre
+> e associatedegree badegree masterdegree professionaldegree doctoratedegree  agricultureforestryandfishing  bus
+> inessandrepairservices financeinsuranceandrealestate manufacturing miningandconstruction nondurablegoods disab
+> wrk ahrsworkt white_american_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaiian_po
+> st_covid
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(24, 109232)   =    897.10
+       Model |  1.1238e+14        24  4.6825e+12   Prob > F        =    0.0000
+    Residual |  5.7014e+14   109,232  5.2196e+09   R-squared       =    0.1647
+-------------+----------------------------------   Adj R-squared   =    0.1645
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72247
+
+--------------------------------------------------------------------------------------------------
+              Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+---------------------------------+----------------------------------------------------------------
+                     white_black |  -5820.032   3622.953    -1.61   0.108    -12920.97    1280.903
+           white_american_indian |  -9443.629   3296.227    -2.86   0.004    -15904.19   -2983.071
+                     white_asian |  -4120.767   4243.364    -0.97   0.331     -12437.7    4196.166
+                  white_hawaiian |   26856.86   9835.145     2.73   0.006     7580.116     46133.6
+                             age |   438.5159   15.87407    27.62   0.000      407.403    469.6289
+                             sex |  -19413.91     469.84   -41.32   0.000    -20334.79   -18493.03
+                 nocollegedegree |   5834.291   665.6578     8.76   0.000     4529.612    7138.971
+                 associatedegree |   10711.51   757.9321    14.13   0.000     9225.969    12197.04
+                        badegree |   32771.62   605.9506    54.08   0.000     31583.96    33959.27
+                    masterdegree |   49228.84   800.6635    61.49   0.000     47659.55    50798.13
+              professionaldegree |   106891.9   1708.243    62.57   0.000     103543.8    110240.1
+                 doctoratedegree |   86287.99   1509.495    57.16   0.000      83329.4    89246.57
+   agricultureforestryandfishing |  -24187.94   1426.314   -16.96   0.000    -26983.49   -21392.38
+       businessandrepairservices |  -2081.297   553.4055    -3.76   0.000    -3165.964     -996.63
+   financeinsuranceandrealestate |   20007.27   936.6514    21.36   0.000     18171.45    21843.09
+                   manufacturing |   6948.516   980.1875     7.09   0.000     5027.363    8869.669
+           miningandconstruction |  -1662.865   895.1633    -1.86   0.063    -3417.372    91.64252
+                 nondurablegoods |   6912.894   1191.375     5.80   0.000     4577.816    9247.971
+                        disabwrk |  -7381.884   1316.482    -5.61   0.000     -9962.17   -4801.597
+                       ahrsworkt |   1056.905   17.73104    59.61   0.000     1022.152    1091.657
+white_american_indian_post_covid |   664.8769   4954.391     0.13   0.893    -9045.658    10375.41
+          white_black_post_covid |    4618.43   5252.886     0.88   0.379    -5677.151    14914.01
+          white_asian_post_covid |   8669.226   5950.132     1.46   0.145    -2992.948     20331.4
+       white_hawaiian_post_covid |  -26835.73   13303.65    -2.02   0.044    -52910.69   -760.7691
+                           _cons |   8158.283   1331.247     6.13   0.000     5549.059    10767.51
+--------------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. outreg2 using "regression_results", replace
+/Users/calvinwu/Library/Application Support/Stata/ado/plus/o/outreg2.ado
+dir : seeout
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. outreg2 using "C:\Users\YourUsername\Desktop\regression_results.dta", replace
+dir : seeout
+
+. 
+end of do-file
+
+. save "/Users/calvinwu/Downloads/Untitled.dta"
+file /Users/calvinwu/Downloads/Untitled.dta saved
+
+. use "/Users/calvinwu/Desktop/Econ120BH/C:\Users\YourUsername\Desktop\regression_results.dta"
+file /Users/calvinwu/Desktop/Econ120BH/C:\Users\YourUsername\Desktop\regression_results.dta not Stata format
+r(610);
+
+. use "/Users/calvinwu/Downloads/Untitled.dta"
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. estout using "C:\Users\YourUsername\Desktop\regression_results.txt", replace
+(file C:\Users\YourUsername\Desktop\regression_results.txt not found)
+(output written to C:\Users\YourUsername\Desktop\regression_results.txt)
+
+. 
+end of do-file
+
+. use "/Users/calvinwu/Desktop/Econ120BH/C:\Users\YourUsername\Desktop\regression_results.dta"
+file /Users/calvinwu/Desktop/Econ120BH/C:\Users\YourUsername\Desktop\regression_results.dta not Stata format
+r(610);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            33                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+
+. 
+. rename incwage Yearly_Wage_Salary 
+
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_american_indian_post_covid = white_american_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+. 
+. regress Yearly_Wage_Salary white_black white_american_indian white_asian white_hawaiian age sex nocollegedegre
+> e associatedegree badegree masterdegree professionaldegree doctoratedegree  agricultureforestryandfishing  bus
+> inessandrepairservices financeinsuranceandrealestate manufacturing miningandconstruction nondurablegoods disab
+> wrk ahrsworkt white_american_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaiian_po
+> st_covid
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(24, 109232)   =    897.10
+       Model |  1.1238e+14        24  4.6825e+12   Prob > F        =    0.0000
+    Residual |  5.7014e+14   109,232  5.2196e+09   R-squared       =    0.1647
+-------------+----------------------------------   Adj R-squared   =    0.1645
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72247
+
+--------------------------------------------------------------------------------------------------
+              Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+---------------------------------+----------------------------------------------------------------
+                     white_black |  -5820.032   3622.953    -1.61   0.108    -12920.97    1280.903
+           white_american_indian |  -9443.629   3296.227    -2.86   0.004    -15904.19   -2983.071
+                     white_asian |  -4120.767   4243.364    -0.97   0.331     -12437.7    4196.166
+                  white_hawaiian |   26856.86   9835.145     2.73   0.006     7580.116     46133.6
+                             age |   438.5159   15.87407    27.62   0.000      407.403    469.6289
+                             sex |  -19413.91     469.84   -41.32   0.000    -20334.79   -18493.03
+                 nocollegedegree |   5834.291   665.6578     8.76   0.000     4529.612    7138.971
+                 associatedegree |   10711.51   757.9321    14.13   0.000     9225.969    12197.04
+                        badegree |   32771.62   605.9506    54.08   0.000     31583.96    33959.27
+                    masterdegree |   49228.84   800.6635    61.49   0.000     47659.55    50798.13
+              professionaldegree |   106891.9   1708.243    62.57   0.000     103543.8    110240.1
+                 doctoratedegree |   86287.99   1509.495    57.16   0.000      83329.4    89246.57
+   agricultureforestryandfishing |  -24187.94   1426.314   -16.96   0.000    -26983.49   -21392.38
+       businessandrepairservices |  -2081.297   553.4055    -3.76   0.000    -3165.964     -996.63
+   financeinsuranceandrealestate |   20007.27   936.6514    21.36   0.000     18171.45    21843.09
+                   manufacturing |   6948.516   980.1875     7.09   0.000     5027.363    8869.669
+           miningandconstruction |  -1662.865   895.1633    -1.86   0.063    -3417.372    91.64252
+                 nondurablegoods |   6912.894   1191.375     5.80   0.000     4577.816    9247.971
+                        disabwrk |  -7381.884   1316.482    -5.61   0.000     -9962.17   -4801.597
+                       ahrsworkt |   1056.905   17.73104    59.61   0.000     1022.152    1091.657
+white_american_indian_post_covid |   664.8769   4954.391     0.13   0.893    -9045.658    10375.41
+          white_black_post_covid |    4618.43   5252.886     0.88   0.379    -5677.151    14914.01
+          white_asian_post_covid |   8669.226   5950.132     1.46   0.145    -2992.948     20331.4
+       white_hawaiian_post_covid |  -26835.73   13303.65    -2.02   0.044    -52910.69   -760.7691
+                           _cons |   8158.283   1331.247     6.13   0.000     5549.059    10767.51
+--------------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            38                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+Yearly_Wage_S~y long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+white_post_co~d float   %9.0g                 
+white_america~d float   %9.0g                 
+white_black_p~d float   %9.0g                 
+white_asian_p~d float   %9.0g                 
+white_hawaiia~d float   %9.0g                 
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+Yearly_Wag~y |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+white_post~d |    109,257    .4451065    .4969798          0          1
+white_amer~d |    109,257     .003478    .0588725          0          1
+-------------+---------------------------------------------------------
+white_blac~d |    109,257    .0032858    .0572282          0          1
+white_asia~d |    109,257    .0027367    .0522418          0          1
+white_hawa~d |    109,257    .0005949     .024384          0          1
+
+. 
+. outreg2 using summary_table.doc, replace
+summary_table.doc
+dir : seeout
+
+. 
+end of do-file
+
+. shellout using `"summary_table.doc"'
+shellout probably will not work with MacOSX
+
+/bin/bash: summary_table.doc: command not found
+
+. shellout using `"summary_table.doc"'
+shellout probably will not work with MacOSX
+
+/bin/bash: summary_table.doc: command not found
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            33                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+
+. 
+. outreg2 using summary_table.doc, replace
+summary_table.doc
+dir : seeout
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. browse
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            33                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+ahrsworkt       byte    %8.0g                 AHRSWORKT
+incwage         long    %12.0g                INCWAGE
+disabwrk        byte    %8.0g                 DISABWRK
+agriculturefo~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+businessandre~s byte    %8.0g                 Business and Repair Services
+financeinsura~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+miningandcons~n byte    %8.0g                 Mining and Construction
+nondurablegoods byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_america~n byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+nocollegedegree byte    %8.0g                 No college degree
+associatedegree byte    %8.0g                 Associate degree
+badegree        byte    %8.0g                 BA degree
+masterdegree    byte    %8.0g                 Master degree
+professionald~e byte    %8.0g                 Professional degree
+doctoratedegree byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+
+. 
+. outreg2 using summary_table.doc1, replace
+dir : seeout
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+   ahrsworkt |    109,257    39.15519    12.72074          1         99
+     incwage |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+    disabwrk |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+businessan~s |    109,257    .4477699    .4972668          0          1
+financeins~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+miningandc~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_amer~n |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+nocolleged~e |    109,257    .1765562    .3812944          0          1
+associated~e |    109,257    .1199282    .3248791          0          1
+    badegree |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+masterdegree |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorated~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+
+. 
+. outreg2 using summary_table1.doc, replace
+summary_table1.doc
+dir : seeout
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary 
+
+. rename  white_american_indian white_indian
+
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_indian_post_covid = white_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. regress Yearly_Wage_Salary white_black white_indian white_asian white_hawaiian age sex nocollegedegree associa
+> tedegree badegree masterdegree professionaldegree doctoratedegree  agricultureforestryandfishing  businessandr
+> epairservices financeinsuranceandrealestate manufacturing miningandconstruction nondurablegoods disabwrk ahrsw
+> orkt white_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaiian_post_covid
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(24, 109232)   =    897.10
+       Model |  1.1238e+14        24  4.6825e+12   Prob > F        =    0.0000
+    Residual |  5.7014e+14   109,232  5.2196e+09   R-squared       =    0.1647
+-------------+----------------------------------   Adj R-squared   =    0.1645
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72247
+
+-----------------------------------------------------------------------------------------------
+           Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+------------------------------+----------------------------------------------------------------
+                  white_black |  -5820.032   3622.953    -1.61   0.108    -12920.97    1280.903
+                 white_indian |  -9443.629   3296.227    -2.86   0.004    -15904.19   -2983.071
+                  white_asian |  -4120.767   4243.364    -0.97   0.331     -12437.7    4196.166
+               white_hawaiian |   26856.86   9835.145     2.73   0.006     7580.116     46133.6
+                          age |   438.5159   15.87407    27.62   0.000      407.403    469.6289
+                          sex |  -19413.91     469.84   -41.32   0.000    -20334.79   -18493.03
+              nocollegedegree |   5834.291   665.6578     8.76   0.000     4529.612    7138.971
+              associatedegree |   10711.51   757.9321    14.13   0.000     9225.969    12197.04
+                     badegree |   32771.62   605.9506    54.08   0.000     31583.96    33959.27
+                 masterdegree |   49228.84   800.6635    61.49   0.000     47659.55    50798.13
+           professionaldegree |   106891.9   1708.243    62.57   0.000     103543.8    110240.1
+              doctoratedegree |   86287.99   1509.495    57.16   0.000      83329.4    89246.57
+agricultureforestryandfishing |  -24187.94   1426.314   -16.96   0.000    -26983.49   -21392.38
+    businessandrepairservices |  -2081.297   553.4055    -3.76   0.000    -3165.964     -996.63
+financeinsuranceandrealestate |   20007.27   936.6514    21.36   0.000     18171.45    21843.09
+                manufacturing |   6948.516   980.1875     7.09   0.000     5027.363    8869.669
+        miningandconstruction |  -1662.865   895.1633    -1.86   0.063    -3417.372    91.64252
+              nondurablegoods |   6912.894   1191.375     5.80   0.000     4577.816    9247.971
+                     disabwrk |  -7381.884   1316.482    -5.61   0.000     -9962.17   -4801.597
+                    ahrsworkt |   1056.905   17.73104    59.61   0.000     1022.152    1091.657
+      white_indian_post_covid |   664.8769   4954.391     0.13   0.893    -9045.658    10375.41
+       white_black_post_covid |    4618.43   5252.886     0.88   0.379    -5677.151    14914.01
+       white_asian_post_covid |   8669.226   5950.132     1.46   0.145    -2992.948     20331.4
+    white_hawaiian_post_covid |  -26835.73   13303.65    -2.02   0.044    -52910.69   -760.7691
+                        _cons |   8158.283   1331.247     6.13   0.000     5549.059    10767.51
+-----------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary 
+variable incwage not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename agricultureforestryandfishing agriculture_forestry_and_fishing
+
+. 
+. rename businessandrepairservices business_and_repairservices
+
+. 
+. rename financeinsuranceandrealestate finance_insurance_and_real_estate
+1 new variable name invalid
+    You attempted to rename financeinsuranceandrealestate to finance_insurance_and_real_estate.  That is an
+    invalid Stata variable name.
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. regress Yearly_Wage_Salary white_black white_indian white_asian white_hawaiian age sex no_college_degree assoc
+> iate_degree bachelor_degree master_degree professional_degree doctorate_degree  agricultureforestryandfishing 
+>  businessandrepairservices financeinsuranceandrealestate manufacturing miningandconstruction nondurablegoods d
+> isabwrk ahrsworkt white_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaiian_post_co
+> vid
+variable no_college_degree not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary 
+
+. rename white_american_indian white_indian
+
+. rename nocollegedegree no_college_degree
+
+. rename associatedegree associate_degree
+
+. rename badegree bachelor_degree
+
+. rename masterdegree master_degree
+
+. rename doctoratedegree doctorate_degree
+
+. rename professionaldegree professional_degree
+
+. 
+. 
+. rename agricultureforestryandfishing agriculture_forestry_and_fishing
+
+. 
+. rename businessandrepairservices business_and_repairservices
+
+. 
+. rename financeinsuranceandrealestate finance_insurance_and_real_estate
+1 new variable name invalid
+    You attempted to rename financeinsuranceandrealestate to finance_insurance_and_real_estate.  That is an
+    invalid Stata variable name.
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename financeinsuranceandrealestate finance_insurance_andreal_estate
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename miningandconstruction mining_and_construction
+
+. 
+. rename nondurablegoods non_durable_goods
+
+. 
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_indian_post_covid = white_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+. 
+. regress Yearly_Wage_Salary white_black white_indian white_asian white_hawaiian age sex no_college_degree assoc
+> iate_degree bachelor_degree master_degree professional_degree doctorate_degree  agricultureforestryandfishing 
+>  businessandrepairservices financeinsuranceandrealestate manufacturing miningandconstruction nondurablegoods d
+> isabwrk ahrsworkt white_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaiian_post_co
+> vid
+variable agricultureforestryandfishing not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary 
+
+. rename white_american_indian white_indian
+
+. rename nocollegedegree no_college_degree
+
+. rename associatedegree associate_degree
+
+. rename badegree bachelor_degree
+
+. rename masterdegree master_degree
+
+. rename doctoratedegree doctorate_degree
+
+. rename professionaldegree professional_degree
+
+. 
+. 
+. rename agricultureforestryandfishing agriculture_forestry_and_fishing
+
+. 
+. rename businessandrepairservices business_and_repairservices
+
+. 
+. rename financeinsuranceandrealestate finance_insurance_andreal_estate
+
+. 
+. rename miningandconstruction mining_and_construction
+
+. 
+. rename nondurablegoods nondurable_goods
+
+. 
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_indian_post_covid = white_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+. 
+. regress Yearly_Wage_Salary white_black white_indian white_asian white_hawaiian age sex no_college_degree assoc
+> iate_degree bachelor_degree master_degree professional_degree doctorate_degree agriculture_forestry_and_fishin
+> g  business_and_repairservices finance_insurance_andreal_estate manufacturing mining_and_construction nondurab
+> le_goods disabwrk ahrsworkt white_indian_post_covid white_black_post_covid white_asian_post_covid white_hawaii
+> an_post_covid
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(24, 109232)   =    897.10
+       Model |  1.1238e+14        24  4.6825e+12   Prob > F        =    0.0000
+    Residual |  5.7014e+14   109,232  5.2196e+09   R-squared       =    0.1647
+-------------+----------------------------------   Adj R-squared   =    0.1645
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72247
+
+--------------------------------------------------------------------------------------------------
+              Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+---------------------------------+----------------------------------------------------------------
+                     white_black |  -5820.032   3622.953    -1.61   0.108    -12920.97    1280.903
+                    white_indian |  -9443.629   3296.227    -2.86   0.004    -15904.19   -2983.071
+                     white_asian |  -4120.767   4243.364    -0.97   0.331     -12437.7    4196.166
+                  white_hawaiian |   26856.86   9835.145     2.73   0.006     7580.116     46133.6
+                             age |   438.5159   15.87407    27.62   0.000      407.403    469.6289
+                             sex |  -19413.91     469.84   -41.32   0.000    -20334.79   -18493.03
+               no_college_degree |   5834.291   665.6578     8.76   0.000     4529.612    7138.971
+                associate_degree |   10711.51   757.9321    14.13   0.000     9225.969    12197.04
+                 bachelor_degree |   32771.62   605.9506    54.08   0.000     31583.96    33959.27
+                   master_degree |   49228.84   800.6635    61.49   0.000     47659.55    50798.13
+             professional_degree |   106891.9   1708.243    62.57   0.000     103543.8    110240.1
+                doctorate_degree |   86287.99   1509.495    57.16   0.000      83329.4    89246.57
+agriculture_forestry_and_fishing |  -24187.94   1426.314   -16.96   0.000    -26983.49   -21392.38
+     business_and_repairservices |  -2081.297   553.4055    -3.76   0.000    -3165.964     -996.63
+finance_insurance_andreal_estate |   20007.27   936.6514    21.36   0.000     18171.45    21843.09
+                   manufacturing |   6948.516   980.1875     7.09   0.000     5027.363    8869.669
+         mining_and_construction |  -1662.865   895.1633    -1.86   0.063    -3417.372    91.64252
+                nondurable_goods |   6912.894   1191.375     5.80   0.000     4577.816    9247.971
+                        disabwrk |  -7381.884   1316.482    -5.61   0.000     -9962.17   -4801.597
+                       ahrsworkt |   1056.905   17.73104    59.61   0.000     1022.152    1091.657
+         white_indian_post_covid |   664.8769   4954.391     0.13   0.893    -9045.658    10375.41
+          white_black_post_covid |    4618.43   5252.886     0.88   0.379    -5677.151    14914.01
+          white_asian_post_covid |   8669.226   5950.132     1.46   0.145    -2992.948     20331.4
+       white_hawaiian_post_covid |  -26835.73   13303.65    -2.02   0.044    -52910.69   -760.7691
+                           _cons |   8158.283   1331.247     6.13   0.000     5549.059    10767.51
+--------------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. rename incwage Yearly_Wage_Salary 
+
+. rename white_american_indian white_indian
+
+. rename nocollegedegree no_college_degree
+
+. rename associatedegree associate_degree
+
+. rename badegree bachelor_degree
+
+. rename masterdegree master_degree
+
+. rename doctoratedegree doctorate_degree
+
+. rename professionaldegree professional_degree
+
+. 
+. 
+. rename agricultureforestryandfishing agriculture_forestry_and_fishing
+
+. 
+. rename businessandrepairservices business_and_repairservices
+
+. 
+. rename financeinsuranceandrealestate finance_insurance_andreal_estate
+
+. 
+. rename miningandconstruction mining_and_construction
+
+. 
+. rename nondurablegoods nondurable_goods
+
+. 
+. rename ahrsworkt hours_worked_last_week
+
+. rename disabwrk disabled_workers
+
+. 
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_indian_post_covid = white_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+. 
+. regress Yearly_Wage_Salary white_black white_indian white_asian white_hawaiian age sex no_college_degree assoc
+> iate_degree bachelor_degree master_degree professional_degree doctorate_degree agriculture_forestry_and_fishin
+> g  business_and_repairservices finance_insurance_andreal_estate manufacturing mining_and_construction nondurab
+> le_goods disabled_workers hours_worked_last_week white_indian_post_covid white_black_post_covid white_asian_po
+> st_covid white_hawaiian_post_covid
+
+      Source |       SS           df       MS      Number of obs   =   109,257
+-------------+----------------------------------   F(24, 109232)   =    897.10
+       Model |  1.1238e+14        24  4.6825e+12   Prob > F        =    0.0000
+    Residual |  5.7014e+14   109,232  5.2196e+09   R-squared       =    0.1647
+-------------+----------------------------------   Adj R-squared   =    0.1645
+       Total |  6.8252e+14   109,256  6.2470e+09   Root MSE        =     72247
+
+--------------------------------------------------------------------------------------------------
+              Yearly_Wage_Salary | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+---------------------------------+----------------------------------------------------------------
+                     white_black |  -5820.032   3622.953    -1.61   0.108    -12920.97    1280.903
+                    white_indian |  -9443.629   3296.227    -2.86   0.004    -15904.19   -2983.071
+                     white_asian |  -4120.767   4243.364    -0.97   0.331     -12437.7    4196.166
+                  white_hawaiian |   26856.86   9835.145     2.73   0.006     7580.116     46133.6
+                             age |   438.5159   15.87407    27.62   0.000      407.403    469.6289
+                             sex |  -19413.91     469.84   -41.32   0.000    -20334.79   -18493.03
+               no_college_degree |   5834.291   665.6578     8.76   0.000     4529.612    7138.971
+                associate_degree |   10711.51   757.9321    14.13   0.000     9225.969    12197.04
+                 bachelor_degree |   32771.62   605.9506    54.08   0.000     31583.96    33959.27
+                   master_degree |   49228.84   800.6635    61.49   0.000     47659.55    50798.13
+             professional_degree |   106891.9   1708.243    62.57   0.000     103543.8    110240.1
+                doctorate_degree |   86287.99   1509.495    57.16   0.000      83329.4    89246.57
+agriculture_forestry_and_fishing |  -24187.94   1426.314   -16.96   0.000    -26983.49   -21392.38
+     business_and_repairservices |  -2081.297   553.4055    -3.76   0.000    -3165.964     -996.63
+finance_insurance_andreal_estate |   20007.27   936.6514    21.36   0.000     18171.45    21843.09
+                   manufacturing |   6948.516   980.1875     7.09   0.000     5027.363    8869.669
+         mining_and_construction |  -1662.865   895.1633    -1.86   0.063    -3417.372    91.64252
+                nondurable_goods |   6912.894   1191.375     5.80   0.000     4577.816    9247.971
+                disabled_workers |  -7381.884   1316.482    -5.61   0.000     -9962.17   -4801.597
+          hours_worked_last_week |   1056.905   17.73104    59.61   0.000     1022.152    1091.657
+         white_indian_post_covid |   664.8769   4954.391     0.13   0.893    -9045.658    10375.41
+          white_black_post_covid |    4618.43   5252.886     0.88   0.379    -5677.151    14914.01
+          white_asian_post_covid |   8669.226   5950.132     1.46   0.145    -2992.948     20331.4
+       white_hawaiian_post_covid |  -26835.73   13303.65    -2.02   0.044    -52910.69   -760.7691
+                           _cons |   8158.283   1331.247     6.13   0.000     5549.059    10767.51
+--------------------------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            38                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+hours_worked_~k byte    %8.0g                 AHRSWORKT
+Yearly_Wage_S~y long    %12.0g                INCWAGE
+disabled_work~s byte    %8.0g                 DISABWRK
+agriculture_f~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+business_and_~s byte    %8.0g                 Business and Repair Services
+finance_insur~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+mining_and_co~n byte    %8.0g                 Mining and Construction
+nondurable_go~s byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_indian    byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+no_college_de~e byte    %8.0g                 No college degree
+associate_deg~e byte    %8.0g                 Associate degree
+bachelor_degree byte    %8.0g                 BA degree
+master_degree   byte    %8.0g                 Master degree
+professional_~e byte    %8.0g                 Professional degree
+doctorate_deg~e byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+white_post_co~d float   %9.0g                 
+white_indian_~d float   %9.0g                 
+white_black_p~d float   %9.0g                 
+white_asian_p~d float   %9.0g                 
+white_hawaiia~d float   %9.0g                 
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+hours_work~k |    109,257    39.15519    12.72074          1         99
+Yearly_Wag~y |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+disabled_w~s |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+business_a~s |    109,257    .4477699    .4972668          0          1
+finance_in~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+mining_and~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_indian |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+no_college~e |    109,257    .1765562    .3812944          0          1
+associate_~e |    109,257    .1199282    .3248791          0          1
+bachelor_d~e |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+master_deg~e |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorate_~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+white_post~d |    109,257    .4451065    .4969798          0          1
+white_indi~d |    109,257     .003478    .0588725          0          1
+-------------+---------------------------------------------------------
+white_blac~d |    109,257    .0032858    .0572282          0          1
+white_asia~d |    109,257    .0027367    .0522418          0          1
+white_hawa~d |    109,257    .0005949     .024384          0          1
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. est tab
+
+---------------------------
+    Variable |   Active    
+-------------+-------------
+ white_black | -5820.0318  
+white_indian | -9443.6292  
+ white_asian | -4120.7671  
+white_hawa~n |   26856.86  
+         age |  438.51592  
+         sex | -19413.912  
+no_college~e |  5834.2912  
+associate_~e |  10711.505  
+bachelor_d~e |  32771.618  
+master_deg~e |  49228.836  
+profession~e |  106891.94  
+doctorate_~e |  86287.986  
+agricultur~g | -24187.936  
+business_a~s | -2081.2968  
+finance_in~e |  20007.269  
+manufactur~g |   6948.516  
+mining_and~n | -1662.8647  
+nondurable~s |  6912.8938  
+disabled_w~s | -7381.8836  
+hours_work~k |  1056.9047  
+white_indi~d |  664.87691  
+white_blac~d |  4618.4302  
+white_asia~d |  8669.2264  
+white_hawa~d | -26835.729  
+       _cons |  8158.2835  
+---------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. outreg2 using regression.doc, replace
+regression.doc
+dir : seeout
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            38                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+hours_worked_~k byte    %8.0g                 AHRSWORKT
+Yearly_Wage_S~y long    %12.0g                INCWAGE
+disabled_work~s byte    %8.0g                 DISABWRK
+agriculture_f~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+business_and_~s byte    %8.0g                 Business and Repair Services
+finance_insur~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+mining_and_co~n byte    %8.0g                 Mining and Construction
+nondurable_go~s byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_indian    byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+no_college_de~e byte    %8.0g                 No college degree
+associate_deg~e byte    %8.0g                 Associate degree
+bachelor_degree byte    %8.0g                 BA degree
+master_degree   byte    %8.0g                 Master degree
+professional_~e byte    %8.0g                 Professional degree
+doctorate_deg~e byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+white_post_co~d float   %9.0g                 
+white_indian_~d float   %9.0g                 
+white_black_p~d float   %9.0g                 
+white_asian_p~d float   %9.0g                 
+white_hawaiia~d float   %9.0g                 
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. tabstat ..., save
+factor-variable and time-series operators not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. tabstat Yearly_Wage_Salary white_black white_indian white_asian white_hawaiian age sex no_college_degree assoc
+> iate_degree bachelor_degree master_degree professional_degree doctorate_degree agriculture_forestry_and_fishin
+> g business_and_repairservices finance_insurance_andreal_estate manufacturing mining_and_construction nondurabl
+> e_goods disabled_workers hours_worked_last_week white_indian_post_covid white_black_post_covid white_asian_pos
+> t_covid white_hawaiian_post_covid, stats(N mean sd min max) columns(statistics) format(N 0 mean 2 sd 2 min 2 m
+> ax 2), save
+invalid 'save' 
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. log using summary_statistics.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. import delimited "/Users/calvinwu/Desktop/120bhfinal"
+(encoding automatically selected: ISO-8859-1)
+(33 vars, 109,257 obs)
+
+. browse
+
+. //describe
+. //summarize
+. 
+. //outreg2 using summary_table1.doc, replace
+. 
+. rename incwage Yearly_Wage_Salary 
+
+. rename white_american_indian white_indian
+
+. rename nocollegedegree no_college_degree
+
+. rename associatedegree associate_degree
+
+. rename badegree bachelor_degree
+
+. rename masterdegree master_degree
+
+. rename doctoratedegree doctorate_degree
+
+. rename professionaldegree professional_degree
+
+. 
+. 
+. rename agricultureforestryandfishing agriculture_forestry_and_fishing
+
+. 
+. rename businessandrepairservices business_and_repairservices
+
+. 
+. rename financeinsuranceandrealestate finance_insurance_andreal_estate
+
+. 
+. rename miningandconstruction mining_and_construction
+
+. 
+. rename nondurablegoods nondurable_goods
+
+. 
+. rename ahrsworkt hours_worked_last_week
+
+. rename disabwrk disabled_workers
+
+. 
+. 
+. generate white_post_covid= white * post_covid
+
+. generate white_indian_post_covid = white_indian * post_covid
+
+. generate white_black_post_covid = white_black * post_covid
+
+. generate white_asian_post_covid = white_asian * post_covid
+
+. generate white_hawaiian_post_covid = white_hawaiian * post_covid
+
+. 
+. describe
+
+Contains data
+ Observations:       109,257                  
+    Variables:            38                  
+----------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------------------------------------
+v1              long    %12.0g                
+age             byte    %8.0g                 AGE
+sex             byte    %8.0g                 SEX
+hours_worked_~k byte    %8.0g                 AHRSWORKT
+Yearly_Wage_S~y long    %12.0g                INCWAGE
+disabled_work~s byte    %8.0g                 DISABWRK
+agriculture_f~g byte    %8.0g                 Agriculture, Forestry, and Fishing
+business_and_~s byte    %8.0g                 Business and Repair Services
+finance_insur~e byte    %8.0g                 Finance, Insurance, and Real Estate:
+manufacturing   byte    %8.0g                 Manufacturing
+mining_and_co~n byte    %8.0g                 Mining and Construction
+nondurable_go~s byte    %8.0g                 NonDurable Goods
+other           byte    %8.0g                 Other
+publicadminis~n byte    %8.0g                 Public Administration:
+transportation  byte    %8.0g                 Transportation
+wholesaleandr~e byte    %8.0g                 Wholesale and Retail Trade
+white           byte    %8.0g                 White
+white_black     byte    %8.0g                 White_Black
+white_indian    byte    %8.0g                 White_American_Indian
+white_asian     byte    %8.0g                 White_Asian
+white_hawaiian  byte    %8.0g                 White_Hawaiian
+dumhighschool   byte    %8.0g                 dum high school
+no_college_de~e byte    %8.0g                 No college degree
+associate_deg~e byte    %8.0g                 Associate degree
+bachelor_degree byte    %8.0g                 BA degree
+master_degree   byte    %8.0g                 Master degree
+professional_~e byte    %8.0g                 Professional degree
+doctorate_deg~e byte    %8.0g                 Doctorate degree
+dumselfemployed byte    %8.0g                 dum self-employed
+worksforwage    byte    %8.0g                 Works for wage
+worksforgover~t byte    %8.0g                 Works for government
+unpaid          byte    %8.0g                 Unpaid
+post_covid      byte    %8.0g                 Post_covid
+white_post_co~d float   %9.0g                 
+white_indian_~d float   %9.0g                 
+white_black_p~d float   %9.0g                 
+white_asian_p~d float   %9.0g                 
+white_hawaiia~d float   %9.0g                 
+----------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. summarize
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |    109,257    162692.7    96584.29          2     332796
+         age |    109,257    42.94416    13.95264         15         85
+         sex |    109,257    1.475933    .4994227          1          2
+hours_work~k |    109,257    39.15519    12.72074          1         99
+Yearly_Wag~y |    109,257    60268.34    79038.02          0    1599999
+-------------+---------------------------------------------------------
+disabled_w~s |    109,257    .0285657    .1665831          0          1
+agricultur~g |    109,257    .0258199    .1585983          0          1
+business_a~s |    109,257    .4477699    .4972668          0          1
+finance_in~e |    109,257    .0700275    .2551946          0          1
+manufactur~g |    109,257     .061543    .2403247          0          1
+-------------+---------------------------------------------------------
+mining_and~n |    109,257    .0792352    .2701067          0          1
+nondurable~s |    109,257     .038533      .19248          0          1
+       other |    109,257           0           0          0          0
+publicadmi~n |    109,257     .057232    .2322865          0          1
+transporta~n |    109,257    .0480244    .2138188          0          1
+-------------+---------------------------------------------------------
+wholesalea~e |    109,257    .1718151    .3772214          0          1
+       white |    109,257     .978665    .1444992          0          1
+ white_black |    109,257    .0069469    .0830586          0          1
+white_indian |    109,257    .0078988    .0885239          0          1
+ white_asian |    109,257    .0054001    .0732871          0          1
+-------------+---------------------------------------------------------
+white_hawa~n |    109,257    .0010892    .0329848          0          1
+dumhighsch~l |    109,257    .2851625    .4514939          0          1
+no_college~e |    109,257    .1765562    .3812944          0          1
+associate_~e |    109,257    .1199282    .3248791          0          1
+bachelor_d~e |    109,257    .2655665    .4416364          0          1
+-------------+---------------------------------------------------------
+master_deg~e |    109,257     .111526    .3147839          0          1
+profession~e |    109,257    .0178204    .1322988          0          1
+doctorate_~e |    109,257    .0234401    .1512974          0          1
+dumselfemp~d |    109,257    .1066385    .3086545          0          1
+worksforwage |    109,257    .7417191    .4376913          0          1
+-------------+---------------------------------------------------------
+worksforgo~t |    109,257     .151258    .3583019          0          1
+      unpaid |    109,257    .0003844    .0196028          0          1
+  post_covid |    109,257     .455202    .4979914          0          1
+white_post~d |    109,257    .4451065    .4969798          0          1
+white_indi~d |    109,257     .003478    .0588725          0          1
+-------------+---------------------------------------------------------
+white_blac~d |    109,257    .0032858    .0572282          0          1
+white_asia~d |    109,257    .0027367    .0522418          0          1
+white_hawa~d |    109,257    .0005949     .024384          0          1
+
+. 
+. log using summary_statistics.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. log using summary_statistics.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. clear
+
+. 
+end of do-file
+
+. do "/var/folders/rb/yjyvs0y910jcq6vvd93cbjnc0000gp/T//SD00475.000000"
+
+. log using summary_statistics.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. log close
+      name:  <unnamed>
+       log:  /Users/calvinwu/Desktop/Econ120BH/120bh.log
+  log type:  text
+ closed on:  25 Feb 2024, 20:24:44
+----------------------------------------------------------------------------------------------------------------
